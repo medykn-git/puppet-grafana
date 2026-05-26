@@ -20,7 +20,7 @@ supported_versions.each do |grafana_version|
       end
 
       it 'has the plugin' do
-        shell('grafana-cli plugins ls') do |r|
+        shell('grafana cli plugins ls') do |r|
           expect(r.stdout).to match(%r{grafana-simple-json-datasource})
         end
       end
@@ -43,7 +43,7 @@ supported_versions.each do |grafana_version|
       end
 
       it 'has the plugin' do
-        shell('grafana-cli plugins ls') do |r|
+        shell('grafana cli plugins ls') do |r|
           expect(r.stdout).to match(%r{grafana-simple-json-datasource})
         end
       end
